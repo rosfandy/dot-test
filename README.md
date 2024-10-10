@@ -80,7 +80,7 @@ Dependency yang digunakan dalam project ini :
 ### Auth
 | Method | Endpoint              | Authentication    |
 |--------|-----------------------|-------------------|
-| POST   | `/api/auth/ogin`      | No                |
+| POST   | `/api/auth/login`      | No                |
 
 ### Students
 | Method | Endpoint              | Authentication    |
