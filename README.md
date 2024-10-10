@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Project
 
 Project ini merupakan admin panel dari E-Learning App, dimana Admin dapat melakukan Create, Read, Update, Delete (CRUD) pada data <i>Student</i> dan <i>Room</i>. 
 
