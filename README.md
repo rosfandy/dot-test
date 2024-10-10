@@ -16,3 +16,21 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ![DB Diagram](https://github.com/rosfandy/dot-test/raw/main/thumbnail/db_diagram.svg)
 
 Full docs : https://dbdocs.io/bagusrosfandy/dot-test?view=relationships
+
+## Screenshoot
+
+### Login Page
+![Login](https://github.com/rosfandy/dot-test/raw/main/thumbnail/login.png)
+
+### Dashboard Page
+![Login](https://github.com/rosfandy/dot-test/raw/main/thumbnail/dashboard.png)
+
+### Room Page
+![Add Room](https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_room.png)
+
+![Edit Room](https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_room.png)
+
+### Student Page
+![Add Student](https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_student.png)
+
+![Edit Student](https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_student.png)
