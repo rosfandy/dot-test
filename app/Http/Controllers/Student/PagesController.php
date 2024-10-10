@@ -14,12 +14,11 @@ class PagesController extends Controller
     {
         DB::beginTransaction();
         try {
-            $rooms = Room::all();
             $token = session('jwt_token');
 
             DB::commit();
 
-            return view('student.store', compact('rooms', 'token'));
+            return view('student.store', compact('token'));
         } catch (\Exception $e) {
             DB::rollBack();
             return back()->withErrors(['message' => $e->getMessage()]);

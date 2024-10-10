@@ -1,11 +1,11 @@
 <x-app-layout>
     <div class="bg-slate-100 min-h-screen justify-center items-center w-full flex">
-        <form id="storeRoomForm" class="bg-white rounded-xl shadow scroll-p-12">
+        <form id="storeRoomForm" class="bg-white rounded-xl shadow scroll-p-12 p-12">
+            <h1 class="text-2xl font-semibold pb-4">Add Room</h1>
             @csrf
-
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" name="name" id="name" class="input input-bordered" required>
+                <input type="text" name="name" id="name" class="input input-bordered w-[20em]" required>
             </div>
 
             <div class="mt-6">

@@ -1,31 +1,21 @@
 <x-app-layout>
     <div class="bg-slate-100 min-h-screen justify-center items-center w-full flex">
-        <form id="storeStudentForm" class="bg-white rounded-xl shadow scroll-p-12">
+        <form id="storeStudentForm" class="bg-white rounded-xl shadow scroll-p-12 p-12">
+            <h1 class="text-2xl font-semibold pb-4">Add Student</h1>
             @csrf
-
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" name="name" id="name" class="input input-bordered" required>
+                <input type="text" name="name" id="name" class="input input-bordered w-[20em]" required>
             </div>
 
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" class="input input-bordered" required>
+                <input type="email" name="email" id="email" class="input input-bordered w-[20em]" required>
             </div>
 
             <div class="mb-4">
                 <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" name="password" id="password" class="input input-bordered" required>
-            </div>
-
-            <div class="mb-4">
-                <label for="room" class="block text-sm font-medium text-gray-700">Room</label>
-                <select name="room_id" id="room" class="select select-bordered" required>
-                    <option disabled selected>Pilih Ruangan</option>
-                    @foreach ($rooms as $room)
-                        <option value="{{ $room->id }}">{{ $room->name }}</option>
-                    @endforeach
-                </select>
+                <input type="password" name="password" id="password" class="input input-bordered w-[20em]" required>
             </div>
 
             <div class="mt-6">
