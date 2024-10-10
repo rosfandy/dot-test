@@ -20,17 +20,18 @@ Full docs : https://dbdocs.io/bagusrosfandy/dot-test?view=relationships
 ## Screenshoot
 
 ### Login Page
-![Login](https://github.com/rosfandy/dot-test/raw/main/thumbnail/login.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/login.png" alt="Login" width="800px">
 
 ### Dashboard Page
-![Login](https://github.com/rosfandy/dot-test/raw/main/thumbnail/dashboard.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/dashboard.png" alt="Dashboard" width="800px">
 
 ### Room Page
-![Add Room](https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_room.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_room.png" alt="Add Room" width="800px">
 
-![Edit Room](https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_room.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_room.png" alt="Edit Room" width="800px">
 
 ### Student Page
-![Add Student](https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_student.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/store_student.png" alt="Add Student" width="800px">
 
-![Edit Student](https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_student.png)
+<img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_student.png" alt="Edit Student" width="800px">
+
