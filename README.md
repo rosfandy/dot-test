@@ -44,6 +44,7 @@ Dependency yang digunakan dalam project ini :
 5. JWT for Auth
 
 ## Project Structure
+Pembagian struktur folder dalam project disesuaikan dengan fungsionalitas masing-masing. Contoh untuk kebutuhan API dan Web masing-masing memiliki kebutuhan sendiri, return response API berupa JSON sedangkan return response Web berupa view.
 ```
 ├── App/
 │   └── Http/
