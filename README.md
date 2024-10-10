@@ -9,9 +9,9 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Project ini merupakan admin panel dari E-Learning App, dimana Admin dapat melakukan Create, Read, Update, Delete (CRUD) pada data <i>Student</i> dan <i>Room</i>. 
 
-## DB Diagram
+## ERD Diagram
 
 ![DB Diagram](https://github.com/rosfandy/dot-test/raw/main/thumbnail/db_diagram.svg)
 
@@ -41,6 +41,7 @@ Dependency yang digunakan dalam project ini :
 2. Laravel 8
 3. jQuery
 4. DaisyUi (tailwindcss)
+5. JWT for Auth
 
 ## Project Structure
 ```
@@ -48,13 +49,13 @@ Dependency yang digunakan dalam project ini :
 │   └── Http/
 │       └── Controllers/
 │           ├── Api/
-│           │   ├── AuthController.php     # Auth Controller for API
-│           │   ├── RoomController.php     # Room Controller for API
-│           │   └── StudentController.php  # Student Controller for API
+│           │   ├── AuthController.php     # Auth Controller for API Route
+│           │   ├── RoomController.php     # Room Controller for API Route
+│           │   └── StudentController.php  # Student Controller for API Route
 │           ├── Web/
-│           │   ├── AuthController.php     # Auth Controller for Web
-│           │   ├── RoomController.php     # Room Controller for Web
-│           │   └── StudentController.php  # Student Controller for Web
+│           │   ├── AuthController.php     # Auth Controller for Web Route
+│           │   ├── RoomController.php     # Room Controller for Web Route
+│           │   └── StudentController.php  # Student Controller for Web Route
 │           ├── PageController.php         # Page Controller
 │           └── Controller.php
 ├── Routes/
@@ -63,14 +64,38 @@ Dependency yang digunakan dalam project ini :
 └── Resources/
     └── views/
         ├── auth/
-        │   └── login.blade.php
+        │   └── login.blade.php            # Page for login
         ├── components/
-        │   ├── app-layout.blade.php
-        │   └── table.blade.php
+        │   ├── app-layout.blade.php       # Component for base HTML
+        │   └── table.blade.php            # Table component
         ├── room/
-        │   ├── edit.blade.php
-        │   └── store.blade.php
+        │   ├── edit.blade.php             # Edit Page for Room 
+        │   └── store.blade.php            # Store Page for Room
         └── student/
-            ├── edit.blade.php
-            └── store.blade.php
+            ├── edit.blade.php             # Edit Page for Student
+            └── store.blade.php            # Store Page for Student
 ```
+
+## API Endpoint
+### Auth
+| Method | Endpoint              | Authentication    |
+|--------|-----------------------|-------------------|
+| POST   | `/api/auth/ogin`      | No                |
+
+### Students
+| Method | Endpoint              | Authentication    |
+|--------|-----------------------|-------------------|
+| GET    | `/api/students`        | No                |
+| POST   | `/api/students`        | Yes (JWT Token)   |
+| PUT    | `/api/students/{id}`   | Yes (JWT Token)   |
+| DELETE | `/api/students/{id}`   | Yes (JWT Token)   |
+
+### Rooms
+| Method | Endpoint              | Authentication    |
+|--------|-----------------------|-------------------|
+| GET    | `/api/rooms`           | No                |
+| POST   | `/api/rooms`           | Yes (JWT Token)   |
+| PUT    | `/api/rooms/{id}`      | Yes (JWT Token)   |
+| DELETE | `/api/rooms/{id}`      | Yes (JWT Token)   |
+
+Full docs : [https://dbdocs.io/bagusrosfandy/dot-test?view=relationships](https://documenter.getpostman.com/view/18253625/2sAXxPBDAg)
