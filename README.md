@@ -35,3 +35,42 @@ Full docs : https://dbdocs.io/bagusrosfandy/dot-test?view=relationships
 
 <img src="https://github.com/rosfandy/dot-test/raw/main/thumbnail/edit_student.png" alt="Edit Student" width="800px">
 
+## Dependency
+Dependency yang digunakan dalam project ini :
+1. PHP >= 7.3
+2. Laravel 8
+3. jQuery
+4. DaisyUi (tailwindcss)
+
+## Project Structure
+```
+├── App/
+│   └── Http/
+│       └── Controllers/
+│           ├── Api/
+│           │   ├── AuthController.php     # Auth Controller for API
+│           │   ├── RoomController.php     # Room Controller for API
+│           │   └── StudentController.php  # Student Controller for API
+│           ├── Web/
+│           │   ├── AuthController.php     # Auth Controller for Web
+│           │   ├── RoomController.php     # Room Controller for Web
+│           │   └── StudentController.php  # Student Controller for Web
+│           ├── PageController.php         # Page Controller
+│           └── Controller.php
+├── Routes/
+│   ├── api.php
+│   └── web.php
+└── Resources/
+    └── views/
+        ├── auth/
+        │   └── login.blade.php
+        ├── components/
+        │   ├── app-layout.blade.php
+        │   └── table.blade.php
+        ├── room/
+        │   ├── edit.blade.php
+        │   └── store.blade.php
+        └── student/
+            ├── edit.blade.php
+            └── store.blade.php
+```
